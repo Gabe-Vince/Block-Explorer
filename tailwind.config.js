@@ -12,6 +12,7 @@ module.exports = {
         base3: "#A9AF7E",
         primary: "#E6E5A3",
         drkgrey: "#111826",
+        mdgrey: "#1F2937",
       },
     },
     backgroundImage: {

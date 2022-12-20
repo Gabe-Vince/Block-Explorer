@@ -31,7 +31,10 @@ export default function StatCards({ price, market }) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-4 gap-4 mt-4">
       <div className=" bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4  border-base3 text-gray-200 font-medium group">
-        <div className="flex justify-center items-center w-14 h-14 bg-base rounded-full transition-all duration-300 transform group-hover:rotate-12">
+        <div
+          className="flex justify-center items-center w-14 h-14 bg-base rounded-full  transform group-hover:rotate-12 group-hover:w-16 transition-all duration-300 ease-linear
+    cursor-pointer "
+        >
           <svg
             width="30"
             height="30"
@@ -54,7 +57,10 @@ export default function StatCards({ price, market }) {
         </div>
       </div>
       <div className="bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4  border-base3 text-gray-200 font-medium group">
-        <div className="flex justify-center items-center w-14 h-14 bg-base rounded-full transition-all duration-300 transform group-hover:rotate-12">
+        <div
+          className="flex justify-center items-center w-14 h-14 bg-base rounded-full  transform group-hover:rotate-12 group-hover:w-16 transition-all duration-300 ease-linear
+    cursor-pointer "
+        >
           <svg
             width="30"
             height="30"
@@ -78,7 +84,10 @@ export default function StatCards({ price, market }) {
         </div>
       </div>
       <div className=" bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4  border-base3 text-gray-200 font-medium group">
-        <div className="flex justify-center items-center w-14 h-14 bg-base rounded-full transition-all duration-300 transform group-hover:rotate-12">
+        <div
+          className="flex justify-center items-center w-14 h-14 bg-base rounded-full  transform group-hover:rotate-12 group-hover:w-16 transition-all duration-300 ease-linear
+    cursor-pointer "
+        >
           <svg
             width="30"
             height="30"
@@ -97,12 +106,16 @@ export default function StatCards({ price, market }) {
           </svg>
         </div>
         <div className="text-right">
-          <p className="text-xl">{gasPrice}</p>
+          <p className="text-l">{gasPrice}</p>
+          {/* {Utils.formatUnits(gasPrice, "gwei")}  */}
           <p>Gas Price</p>
         </div>
       </div>
       <div className=" bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4  border-base3 text-gray-200 font-medium group">
-        <div className="flex justify-center items-center w-14 h-14 bg-base rounded-full transition-all duration-300 transform group-hover:rotate-12">
+        <div
+          className="flex justify-center items-center w-14 h-14 bg-base rounded-full  transform group-hover:rotate-12 group-hover:w-16 transition-all duration-300 ease-linear
+    cursor-pointer "
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

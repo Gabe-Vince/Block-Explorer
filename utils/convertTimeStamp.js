@@ -1,7 +1,6 @@
 export const getTimeSince = (timestamp) => {
   // Calculate the time difference between the timestamp and the current time
-  const timeDifference = Math.floor((Date.now() - timestamp) / 1000);
-
+  const timeDifference = Math.floor((Date.now() - timestamp * 1000) / 1000);
   // If the time difference is less than 60 seconds, return the time difference followed by "seconds ago"
   if (timeDifference < 60) {
     return `${timeDifference} seconds ago`;

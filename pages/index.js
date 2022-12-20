@@ -7,7 +7,9 @@ import StatCards from "../components/StatCards";
 import Welcome from "../components/Welcome";
 import { getEthPrice } from "../utils/getEthPrice";
 import { getMarketCap } from "../utils/getMarketCap";
-import { setBlockArray } from "../utils/alchemySDK";
+
+import TxTab from "../components/TxTab";
+import { useState, useEffect } from "react";
 
 export default function Home({ ethPrice, marketCap }) {
   return (
@@ -25,9 +27,14 @@ export default function Home({ ethPrice, marketCap }) {
         {/* SideBar */}
         <SideBar />
 
+        {/* Stat Cards */}
         <StatCards price={ethPrice} market={marketCap} />
 
+        {/* Block Tab */}
         <BlockTab />
+
+        {/* Transaction Tab */}
+        <TxTab />
       </div>
     </div>
   );

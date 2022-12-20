@@ -10,6 +10,20 @@ export const getMarketCap = async () => {
     )
     .then((response) => response.data);
 
-  const markCap = res[0].market_cap;
+  const cap = res[0].market_cap;
+  function formatNumber(num) {
+    // Convert the number string to an array of digits
+    let string = num.toString();
+    let digits = string.split("");
+
+    // Insert a comma every three digits, starting from the right
+    for (let i = digits.length - 3; i > 0; i -= 3) {
+      digits.splice(i, 0, ",");
+    }
+
+    // Join the array back into a string and return it
+    return digits.join("");
+  }
+  const markCap = formatNumber(cap);
   return markCap;
 };
